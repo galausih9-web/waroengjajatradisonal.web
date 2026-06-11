@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waroeng Jajanan Tradisional - Beranda</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #fcf8f2;
+        color: #4a3319;
+      }
+      .navbar {
+        background-color: #e6c594 !important;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #5a3d1b !important;
+        font-weight: bold;
+      }
+      .hero-section {
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+      footer {
+        background-color: #5a3d1b;
+        color: #fcf8f2;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="index.html"
+          >Waroeng Jajanan Tradisional</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-decoration-underline"
+                href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">Menu Jajanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri Foto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pesan.html">Pesan Sekarang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="bannerCarousel" class="carousel slide my-4 container" data-bs-ride="carousel">
+    <div class="carousel-inner rounded-3 shadow">
+        <div class="carousel-item active">
+            <img src="logo.png" 
+                 class="d-block w-100 img-fluid" 
+                 alt="Banner 1" 
+                 style="height: 400px; height: calc(25vh + 150px); object-fit: cover; object-position: center;">
+            </div>
+        </div>
+    </div>
+    <main class="container my-5">
+      <div class="hero-section text-center mx-auto max-width-md">
+        <h1 class="display-5 fw-bold mb-3" style="color: #b57c3a">
+          Selamat Datang di Surga Kuliner Nusantara
+        </h1>
+        <p class="lead text-muted">
+          Menyediakan berbagai macam kue basah dan jajanan pasar tradisional
+          dengan resep asli warisan leluhur.
+        </p>
+        <hr class="my-4" style="border-color: #e6c594" />
+        <a
+          href="produk.html"
+          class="btn btn-lg px-4 text-white"
+          style="background-color: #b57c3a"
+          >Lihat Menu Kami</a
+        >
+      </div>
+    </main>
+    </div>
+    <footer class="text-center py-4 mt-auto">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2026 Waroeng Jajanan Tradisional. All Rights Reserved.
+        </p>
+        <small>M. Ghoni Syakieb Alamsyah (24.53.030996)</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <a href="https://wa.me/62087863151990?text=Halo%20Operator,%20saya%20butuh%20bantuan%20mengenai%20website%20Waroeng%20Jajanan." 
+   target="_blank" 
+   class="btn btn-success rounded-circle shadow-lg d-flex align-items-center justify-content-center" 
+   style="position: fixed; bottom: 85px; right: 20px; width: 60px; height: 60px; z-index: 9999; border: 2px solid white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 8 0a7.86 7.86 0 0 0-7.604 6.885c0 1.254.316 2.478.917 3.561L0 16l3.626-1.013A7.88 7.88 0 0 0 8 15.854h.002A7.88 7.88 0 0 0 16 8a7.88 7.88 0 0 0-2.399-5.674zM10.514 11.4c-.139.395-.712.722-1.108.776-.279.039-.638.071-1.874-.418-1.58-.624-2.59-2.203-2.668-2.304-.078-.102-.647-.857-.647-1.634 0-.778.406-1.158.559-1.314.154-.156.335-.195.448-.195.112 0 .224 0 .322.004.101.002.23-.039.36.273.13.314.445 1.083.483 1.163.038.08.063.173.01.277-.05.105-.075.17-.151.257-.075.086-.157.148-.224.232-.07.08-.142.167-.061.308.081.142.358.591.768.956.528.47 1.014.615 1.157.688.143.073.227.06.312-.041.085-.1.365-.426.463-.57.098-.143.197-.12.33-.071.132.049.837.396.982.468.145.072.242.107.278.169.035.063.035.366-.104.761z"/>
+    </svg>
+</a>
+  </body>
+</html>

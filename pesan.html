@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pemesanan Jajanan - Waroeng Jajanan Tradisional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #fcf8f2;
+        color: #4a3319;
+      }
+      .navbar {
+        background-color: #e6c594 !important;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #5a3d1b !important;
+        font-weight: bold;
+      }
+      .form-container {
+        background-color: #ffffff;
+        border-radius: 15px;
+        border: 1px solid #e6c594;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+      .btn-kirim {
+        background-color: #8c531d;
+        color: white;
+      }
+      .btn-kirim:hover {
+        background-color: #5a3d1b;
+        color: white;
+      }
+      footer {
+        background-color: #5a3d1b;
+        color: #fcf8f2;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="index.html"
+          >Waroeng Jajanan Tradisional</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">Menu Jajanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri Foto</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-decoration-underline"
+                href="pesan.html"
+                >Pesan Sekarang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <h2 class="text-center fw-bold mb-3" style="color: #b57c3a">
+        Formulir Pemesanan Jajanan
+      </h2>
+      <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-sm btn-outline-secondary"
+          >Beranda</a
+        >
+      </div>
+
+      <div class="form-container p-4 p-md-5 mx-auto" style="max-width: 750px">
+        <form action="#" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="namaLengkap" class="form-label fw-bold"
+              >Nama Lengkap Pembeli</label
+            >
+            <input
+              type="text"
+              class="form-value form-control"
+              id="namaLengkap"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email Aktif</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label fw-bold"
+              >Kata Sandi Akun Member</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label d-block fw-bold">Metode Pengiriman</label>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="metodeKirim"
+                id="ambilSendiri"
+                value="ambil"
+                checked
+              />
+              <label class="form-check-label" for="ambilSendiri"
+                >Ambil Sendiri</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="metodeKirim"
+                id="antarKurir"
+                value="kurir"
+              />
+              <label class="form-check-label" for="antarKurir"
+                >Antar Kurir</label
+              >
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label d-block fw-bold">Tambahan Toping</label>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="topingKelapa"
+                value="kelapa"
+              />
+              <label class="form-check-label" for="topingKelapa"
+                >Parutan Kelapa</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="topingGula"
+                value="gula"
+              />
+              <label class="form-check-label" for="topingGula"
+                >Ekstra Gula Cair</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="topingWijen"
+                value="wijen"
+              />
+              <label class="form-check-label" for="topingWijen"
+                >Biji Wijen</label
+              >
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="cabang" class="form-label fw-bold"
+              >Pilih Lokasi Cabang:</label
+            >
+            <select class="form-select" id="cabang">
+              <option selected>Komplek Pasar Besar Palangka Raya</option>
+              <option value="1">Cabang Menteng</option>
+              <option value="2">Cabang Yos Sudarso</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="alamat" class="form-label fw-bold"
+              >Alamat Lengkap</label
+            >
+            <textarea
+              class="form-control"
+              id="alamat"
+              rows="3"
+              placeholder="Isi jika memilih antar kurir..."
+            ></textarea>
+          </div>
+
+          <div class="mb-3" style="max-width: 200px">
+            <label for="jumlah" class="form-label fw-bold"
+              >Jumlah Pesanan</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="jumlah"
+              min="1"
+              required
+            />
+          </div>
+
+          <div class="mb-3" style="max-width: 250px">
+            <label for="tanggal" class="form-label fw-bold"
+              >Tanggal Pengambilan:</label
+            >
+            <input type="date" class="form-control" id="tanggal" required />
+          </div>
+
+          <div class="mb-4">
+            <label for="buktiBayar" class="form-label fw-bold"
+              >Upload Bukti Bayar</label
+            >
+            <input class="form-control" type="file" id="buktiBayar" />
+          </div>
+
+          <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-kirim px-4">
+              Kirim Pesanan
+            </button>
+            <button type="reset" class="btn btn-secondary px-4">
+              Hapus Isi Form
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="text-center py-4 mt-auto">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 Waroeng Jajanan Tradisional.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <a
+      href="https://wa.me/62087863151990?text=Halo%20Operator,%20saya%20butuh%20bantuan%20mengenai%20website%20Waroeng%20Jajanan."
+      target="_blank"
+      class="btn btn-success rounded-circle shadow-lg d-flex align-items-center justify-content-center"
+      style="
+        position: fixed;
+        bottom: 85px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        z-index: 9999;
+        border: 2px solid white;
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-whatsapp"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M13.601 2.326A7.85 7.85 0 0 0 8 0a7.86 7.86 0 0 0-7.604 6.885c0 1.254.316 2.478.917 3.561L0 16l3.626-1.013A7.88 7.88 0 0 0 8 15.854h.002A7.88 7.88 0 0 0 16 8a7.88 7.88 0 0 0-2.399-5.674zM10.514 11.4c-.139.395-.712.722-1.108.776-.279.039-.638.071-1.874-.418-1.58-.624-2.59-2.203-2.668-2.304-.078-.102-.647-.857-.647-1.634 0-.778.406-1.158.559-1.314.154-.156.335-.195.448-.195.112 0 .224 0 .322.004.101.002.23-.039.36.273.13.314.445 1.083.483 1.163.038.08.063.173.01.277-.05.105-.075.17-.151.257-.075.086-.157.148-.224.232-.07.08-.142.167-.061.308.081.142.358.591.768.956.528.47 1.014.615 1.157.688.143.073.227.06.312-.041.085-.1.365-.426.463-.57.098-.143.197-.12.33-.071.132.049.837.396.982.468.145.072.242.107.278.169.035.063.035.366-.104.761z"
+        />
+      </svg>
+    </a>
+  </body>
+</html>
